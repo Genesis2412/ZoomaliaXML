@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="shoplist.xsd">
+
+        <product category="Dress">
+            <id>1</id>
+            <name>Some test product</name>
+            <price>49.00</price>
+            <img>./img/product1.jpg</img>
+            <description>
+                Here comes the description of the test product ...
+            </description>
+        </product>
+
+        <product category="House">
+            <id>2</id>
+            <name>Another test product</name>
+            <price>69.00</price>
+            <img>./img/product2.jpg</img>
+            <description>
+                This is the description of the second test product ...
+            </description>
+        </product>
+        
+    </Products>
