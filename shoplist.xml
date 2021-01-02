@@ -5,7 +5,7 @@
             <id>1</id>
             <name>Some test product</name>
             <price>49.00</price>
-            <img>./img/product1.jpg</img>
+            <img>product1.jpg</img>
             <description>
                 Here comes the description of the test product ...
             </description>
@@ -15,7 +15,7 @@
             <id>2</id>
             <name>Another test product</name>
             <price>69.00</price>
-            <img>./img/product2.jpg</img>
+            <img>product2.jpg</img>
             <description>
                 This is the description of the second test product ...
             </description>
