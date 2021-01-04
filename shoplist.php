@@ -32,7 +32,7 @@
                     echo'<div class="col-sm-4 col-lg-3 col-md-3">
                             <div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:450px;">
                                 <img src="'. $product->img .'" alt="" class="img-responsive" width="250px">
-                                <h4 style="text-align:center;" class="none" >'.$product->name .'</h4>
+                                <h4 style="text-align:center;" class="none" >'. $product->name .'</h4>
                                 <p align="center"><strong> TYPE: '. $product->description .'</strong></p>
                                 <h4 style="text-align:center;" class="text-danger" >Rs '. $product->price .'</h4>
                                 <form>
