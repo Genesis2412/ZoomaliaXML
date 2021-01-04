@@ -4,35 +4,49 @@
         <meta name="description" content="MusclePharm Mauritian products">
         <meta name="keyword" content="MusclePharm, supplements, protein, mass gainer">
         <meta charset="UTF-8">
+        <script src="jquery-3.5.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
-        
-    <div id="demo">
-    </div>
 
+        <select id="list">
+            <option value="Hello">Hello</option>
+            <option value="Dress">Namaste</option>
+            <option value="House">Bonjour</option>
+        </select>
+
+        <div id="productContainer"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--AJAX Get Products-->
         <script type="text/javascript">
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                myFunction(this);
-            }
-            };
-            xhttp.open("GET", "shoplist.xml", true);
-            xhttp.send();
-
-            function myFunction(xml) {
-                var x, i;
-                var xmlDoc = xml.responseXML;
-                var list='<select id="list"><option value="SELECT TYPE" disabled selected="selected">SELECT CATEGORY</option><option value="All">All</option>'
-                x = xmlDoc.getElementsByTagName('product');
-                for (i = 0; i < x.length; i++) 
+            $(document).ready(function()
+            {
+                $("#list").on('change',function()
                 {
-                    list += '<option>' + x[i].getAttribute('category') + '</option>';
-                }
-                list += '</select>'
-                document.getElementById("demo").innerHTML = list;
-            }
+                    var value=$(this).val();
+                    $.ajax(
+                    {
+                        url:'shoplist.php',
+                        type:'POST',
+                        data:'request='+value,
+                        beforeSend:function()
+                        {
+                            $("#productContainer").html()
+                        },
+                        success:function(data)
+                        {
+                            $("#productContainer").html(data)
+                        }
+                    });                    
+                });
+                
+            });
         </script>
+
+        
+        
+        
     </body>
 </html>

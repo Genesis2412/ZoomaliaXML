@@ -44,6 +44,7 @@
 
         <div style="clear:both"></div>
 
+        <!--Getting all the category type of the products-->
         <script type="text/javascript">
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -61,13 +62,43 @@
                 x = xmlDoc.getElementsByTagName('product');
                 for (i = 0; i < x.length; i++) 
                 {
-                    list += '<option>' + x[i].getAttribute('category') + '</option>';
+                    var attribute = ''; 
+                    attribute = x[i].getAttribute('category');
+                    list += '<option>' + attribute + '</option>';
                 }
-                list += '</select>'
+                list += '</select>';
                 document.getElementById("selectList").innerHTML = list;
             }
         </script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--AJAX Get Products On Selection Change-->
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("#list").on('change',function()
+                {
+                    var value=$(this).val();
+                    //alert(value);
+                    $.ajax(
+                    {
+                        url:'shoplist.php',
+                        type:'POST',
+                        data:'request='+value,
+                        beforeSend:function()
+                        {
+                            $("#productContainer").html()
+                        },
+                        success:function(data)
+                        {
+                            $("#productContainer").html(data)
+                        }
+                    });                    
+                });
+                
+            });
+        </script>
 
 </body>
 </html>
