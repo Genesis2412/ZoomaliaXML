@@ -11,6 +11,67 @@
             <title>PRODUCTS || EMPIRE FITNESS</title> 
     </head>
     <body>
+    
+        <!--Navigation Bar-->
+        <header>
+            <div class="logo">
+            <a href="#"><img src="./img/logo.svg" alt="ZOOMALIA"></a>
+            </div>
+
+            <nav>
+            <ul>
+                <li><a class="active" href="index.php">HOME</a></li>
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="dogCat_adopt.php">ADOPTION</a></li>
+                <li><a href="donate.php">DONATION</a></li>
+                <li><a href="veterinary.php">VETERINARY</a></li>
+                <li><a href="shop.php">SHOP NOW</a></li>
+                <li><a href="#contactUs">CONTACT US</a></li>
+                <li>
+                    <a style="color: white;"><i class="fa fa-user" aria-hidden="true" style="font-size: 25px;"></i></a>
+                    <ul>
+                    <li>
+                        <!--Hide/show links-->
+                        <?php if(isset($_SESSION['userEmail'])): ?>
+                            <a href="logout.php">LOGOUT</a>
+                        <?php else: ?>
+                            <a href="login.php">LOGIN</a>
+                        <?php endif; ?>
+                    </li>
+                    <li>
+                        <?php if(!isset($_SESSION['userEmail'])): ?>
+                        <a href="register.php">REGISTER</a>
+                        <?php endif; ?>
+                    </li>
+                    <?php if(isset($_SESSION['userEmail'])): ?>
+                        <li>
+                            <a href="donateSelect.php">MY DONATION</a>
+                        </li>
+                    <?php endif; ?>
+                    </ul>
+                </li>
+                <li>
+                    <a href="inCart.php" style="color: white;"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 25px;"></i></a>
+                </li>
+            </ul>
+            </nav>
+
+            <!--Hamburger-->
+            <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+
+        <!--Banner Image-->
+        <div class="banner">
+            <img src="bannershop.png" alt="shopimage">
+        </div>
+
+        <!--Product Heading-->
+        <div class="heading">
+            <h2>SHOP NOW</h2>
+        </div>
 
         <!--Select List-->
         <div id="selectList">
@@ -43,6 +104,26 @@
         </div>
 
         <div style="clear:both"></div>
+
+        <!--Footer-->
+        <section id="footer">
+        <div class="container">
+            <p>&copy;  2020 Zoomalia All rights reserved</p>
+        </div>
+        </section>
+        <!--End-->
+
+        <!--Navigation Bar Javascript-->
+        <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('.menu-toggle').click(function()
+            {
+            $('nav').toggleClass('active')
+            })      
+        })
+        </script>
+        <!--End Of Navigation Bar Javascript-->
 
         <!--Getting all the category type of the products-->
         <script type="text/javascript">
@@ -98,6 +179,22 @@
                 });
                 
             });
+        </script>
+
+        <!--AJAX Add To Cart-->
+        <script type="text/javascript">
+            function addTocart(id)
+            {
+                var id=id;
+                $.ajax({
+                    type:"POST",
+                    url:"addCart.php",
+                    data: {id:id},
+                    success: function(value){
+                        alert("Product added Successfully");
+                    }
+                });
+            }
         </script>
 
 </body>

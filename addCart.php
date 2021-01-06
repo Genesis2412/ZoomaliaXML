@@ -1,10 +1,8 @@
 <?php 
     session_start();
 
-    //$id=$_POST["id"];
-    $id=1;
+    $id=$_POST["id"];
     $quantity=1;
-
 
     $xml=simplexml_load_file("shoplist.xml");
     $products= $xml->xpath('/Products/product[id="'. $id .'"]');
@@ -51,9 +49,7 @@
                 $_SESSION["cart"][0]=$item_array;
 
                 $item_array_quantity = array_column($_SESSION["cart"], "item_quantity");
-                $sum = array_search($id,$item_array_quantity);
-
-                 
+                $sum = array_search($id,$item_array_quantity);                 
             }
         }
         
