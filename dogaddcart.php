@@ -4,16 +4,16 @@
     $id=$_POST["id"];
     $quantity=1;
 
-    $xml=simplexml_load_file("shoplist.xml");
-    $products= $xml->xpath('/Products/product[id="'. $id .'"]');
+    $xml=simplexml_load_file("products.xml");
+    $products= $xml->xpath('/products/dogProducts[id="'. $id .'"]');
     foreach($products as $product) 
     { 
         if($product != '')
         {
             $idnum = (string)$product->id;
-            $name = (string)$product->name;
+            $name = (string)$product->Name;
             $img = (string)$product->img;
-            $price = (string)$product->price;
+            $price = (string)$product->Price;
 
             if(isset($_SESSION["cart"])) //checking session
             {

@@ -8,7 +8,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="shop.css">
-            <title>PRODUCTS || EMPIRE FITNESS</title> 
+            <title>SHOP NOW || ZOOMALIA</title> 
     </head>
     <body>
     
@@ -26,7 +26,12 @@
                 <li><a href="dogCat_adopt.php">ADOPTION</a></li>
                 <li><a href="donate.php">DONATION</a></li>
                 <li><a href="veterinary.php">VETERINARY</a></li>
-                <li><a href="shop.php">SHOP NOW</a></li>
+                <li><a>SHOP NOW</a>
+                    <ul>
+                        <li><a href="dogproduct.php">DOG</a></li>
+                        <li><a href="catproduct.php">CAT</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contactUs">CONTACT US</a></li>
                 <li>
                     <a style="color: white;"><i class="fa fa-user" aria-hidden="true" style="font-size: 25px;"></i></a>
@@ -82,15 +87,16 @@
             <div class="col-md-12">
                 <div id="productContainer"> 
                     <?php
-                    $xml=simplexml_load_file("shoplist.xml") or die("Error: Cannot create object");
-                    foreach($xml->children() as $product) 
+                    $xml=simplexml_load_file("products.xml");
+                    $products = $xml->xpath('/products/dogProducts');
+                    foreach($products as $product) 
                     {                   
                         echo'<div class="col-sm-4 col-lg-3 col-md-3">
                                 <div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:450px;">
-                                    <img src="'. $product->img .'" alt="" class="img-responsive" width="250px">
-                                    <h4 style="text-align:center;" class="none" >'.$product->name .'</h4>
-                                    <p align="center"><strong> TYPE: '. $product->description .'</strong></p>
-                                    <h4 style="text-align:center;" class="text-danger" >Rs '. $product->price .'</h4>
+                                    <img src="'. $product->img .'" alt="" class="img-responsive" width="200px">
+                                    <h4 style="text-align:center;" class="none" >'.$product->Name .'</h4>
+                                    <p align="center"><strong> DETAILS: '. $product->Description .'</strong></p>
+                                    <h4 style="text-align:center;" class="text-danger" >Rs '. $product->Price .'</h4>
                                     <form>
                                         <button type="button" class="btn btn-success" onclick="addTocart('. $product->id .')"style="margin-top:10px;position:relative;left:30%;">Add to Cart</button
                                     </form>
@@ -133,14 +139,14 @@
                 myFunction(this);
             }
             };
-            xhttp.open("GET", "shoplist.xml", true);
+            xhttp.open("GET", "products.xml", true);
             xhttp.send();
 
             function myFunction(xml) {
                 var x, i;
                 var xmlDoc = xml.responseXML;
                 var list='<select id="list"><option value="SELECT TYPE" disabled selected="selected">SELECT CATEGORY</option><option value="All">All</option>'
-                x = xmlDoc.getElementsByTagName('product');
+                x = xmlDoc.getElementsByTagName('dogProducts');
                 for (i = 0; i < x.length; i++) 
                 {
                     var attribute = ''; 
@@ -163,7 +169,7 @@
                     var value=$(this).val();
                     $.ajax(
                     {
-                        url:'shoplist.php',
+                        url:'dogshoplist.php',
                         type:'POST',
                         data:'request='+value,
                         beforeSend:function()
@@ -187,7 +193,7 @@
                 var id=id;
                 $.ajax({
                     type:"POST",
-                    url:"addCart.php",
+                    url:"dogaddcart.php",
                     data: {id:id},
                     success: function(value){
                         alert("Product added Successfully");

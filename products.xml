@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<products xs:noNamespaceSchemaLocation = "products.xsd" xmlns:xs = "http://www.w3.org/2001/XMLSchema-instance">
+      <!--Dog Products-->
+      <dogProducts category="Dog Collar">
+            <id>1</id>
+            <Name>Dog Collar</Name>
+            <Description>Red collar with paw prints</Description>
+            <Price>200.00</Price>
+            <img>images/y1.jpg</img>
+      </dogProducts>
+
+      <dogProducts category="Dog Harness">
+            <id>2</id>
+            <Name>Dog Harness</Name>
+            <Description>Adjustable harness with leash lead set</Description>
+            <Price>600.00</Price>
+            <img>images/y3.jpg</img>
+      </dogProducts>
+      
+      <dogProducts category="Dog Brush">
+            <id>3</id>
+            <Name>Dog Brush</Name>
+            <Description> Puppy grooming brush</Description>
+            <Price>150.00</Price>
+            <img>images/y5.jpg</img>
+      </dogProducts>
+      
+      <dogProducts category="Dog Leash">
+            <id>4</id>
+            <Name>Dog Leash </Name>
+            <Description>Simple red dog leash</Description>
+            <Price>200.00</Price>
+           <img>images/y7.jpg</img>
+      </dogProducts>
+      
+      <dogProducts  category="Dog Toys">
+         <id>5</id>
+          <Name>Dog Toys</Name>
+          <Description> Includes 4 types of dog toys</Description>
+          <Price>250</Price>
+         <img>images/y9.jpg</img>
+      </dogProducts>
+      
+      <dogProducts category="Dog Kennel">
+          <id>6</id>
+          <Name>Dog Kennel</Name>
+          <Description> Black modular kennel </Description>
+          <Price>1500</Price>
+         <img>images/y11.jpg</img>
+      </dogProducts>
+      
+      <!--Cat Products-->
+     <catProducts category="Cat Collar">
+          <id>7</id>
+          <Name>Cat Collar</Name>
+          <Description>Luxury green cat collar</Description>
+          <Price>300</Price>
+          <img>images/z1.jpg</img>
+      </catProducts>
+    
+       <catProducts category="Cat Harness">
+          <id>8</id>
+          <Name>Cat Harness</Name>
+          <Description>Lightweight, soft and breatheable</Description>
+          <Price>500.50</Price>
+          <img>images/z3.jpg</img>
+      </catProducts>
+      
+      <catProducts category="Cat Toys">
+          <id>9</id>
+          <Name>Cat Toys</Name>
+          <Description> Small toy fish and feather</Description>
+          <Price>100</Price>
+          <img>images/z5.jpg</img>
+     </catProducts>
+      
+       <catProducts category="Cat Bed">
+         <id>10</id>
+          <Name>Cat Bed</Name>
+          <Description>Indoor cat bed</Description>
+          <Price>450</Price>
+          <img>images/z7.jpg</img>
+      </catProducts>
+      
+    </products>
