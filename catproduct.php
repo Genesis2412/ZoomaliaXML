@@ -21,8 +21,8 @@
             <nav>
             <ul>
                 <li><a class="active" href="index.php">HOME</a></li>
-                <li><a href="#aboutUs">ABOUT US</a></li>
-                <li><a href="#service">SERVICES</a></li>
+                <li><a href="index.php#aboutUs">ABOUT US</a></li>
+                <li><a href="index.php#service">SERVICES</a></li>
                 <li><a href="dogCat_adopt.php">ADOPTION</a></li>
                 <li><a href="donate.php">DONATION</a></li>
                 <li><a href="veterinary.php">VETERINARY</a></li>
@@ -32,7 +32,7 @@
                         <li><a>CAT</a></li>
                     </ul>
                 </li>
-                <li><a href="#contactUs">CONTACT US</a></li>
+                <li><a href="index.php#contactUs">CONTACT US</a></li>
                 <li>
                     <a style="color: white;"><i class="fa fa-user" aria-hidden="true" style="font-size: 25px;"></i></a>
                     <ul>
@@ -70,7 +70,7 @@
 
         <!--Banner Image-->
         <div class="banner">
-            <img src="catbannershop.jpg" alt="shopimage">
+            <img src="./img/catbannershop.jpg" alt="shopimage">
         </div>
 
         <!--Product Heading-->
@@ -114,7 +114,7 @@
         <!--Footer-->
         <section id="footer">
         <div class="container">
-            <p>&copy;  2020 Zoomalia All rights reserved</p>
+            <p>&copy;  2021 Zoomalia All rights reserved</p>
         </div>
         </section>
         <!--End-->

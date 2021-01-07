@@ -12,7 +12,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="shop.css">
-        <title>MY CART || EMPIRE FITNESS</title>  
+        <title>MY CART || ZOOMALIA</title>  
     </head>
     <body>
         
@@ -69,7 +69,7 @@
 
         <!--Banner Image-->
         <div class="banner">
-            <img src="incartbanner.jpg" alt="incartimage">
+            <img src="./img/incartbanner.jpg" alt="incartimage">
         </div>
 
         <!--Product Heading-->
@@ -143,7 +143,7 @@
         <!--Footer-->
         <section id="footer" class="foot">
         <div class="container">
-            <p>&copy;  2020 Zoomalia All rights reserved</p>
+            <p>&copy;  2021 Zoomalia All rights reserved</p>
         </div>
         </section>
         <!--End-->

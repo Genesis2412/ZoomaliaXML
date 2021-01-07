@@ -7,7 +7,7 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" type="text/css" href="shop.css">
+            <link rel="stylesheet" type="text/css" href="./css/shop.css">
             <title>SHOP NOW || ZOOMALIA</title> 
     </head>
     <body>
@@ -21,18 +21,18 @@
             <nav>
             <ul>
                 <li><a class="active" href="index.php">HOME</a></li>
-                <li><a href="#aboutUs">ABOUT US</a></li>
-                <li><a href="#service">SERVICES</a></li>
+                <li><a href="index.php#aboutUs">ABOUT US</a></li>
+                <li><a href="index.php#service">SERVICES</a></li>
                 <li><a href="dogCat_adopt.php">ADOPTION</a></li>
                 <li><a href="donate.php">DONATION</a></li>
                 <li><a href="veterinary.php">VETERINARY</a></li>
-                <li><a>SHOP NOW</a>
+                <li><a href="">SHOP NOW</a>
                     <ul>
                         <li><a href="dogproduct.php">DOG</a></li>
                         <li><a href="catproduct.php">CAT</a></li>
                     </ul>
                 </li>
-                <li><a href="#contactUs">CONTACT US</a></li>
+                <li><a href="index.php#contactUs">CONTACT US</a></li>
                 <li>
                     <a style="color: white;"><i class="fa fa-user" aria-hidden="true" style="font-size: 25px;"></i></a>
                     <ul>
@@ -70,7 +70,7 @@
 
         <!--Banner Image-->
         <div class="banner">
-            <img src="bannershop.png" alt="shopimage">
+            <img src="./img/dogbannershop.png" alt="shopimage">
         </div>
 
         <!--Product Heading-->
@@ -114,7 +114,7 @@
         <!--Footer-->
         <section id="footer">
         <div class="container">
-            <p>&copy;  2020 Zoomalia All rights reserved</p>
+            <p>&copy;  2021 Zoomalia All rights reserved</p>
         </div>
         </section>
         <!--End-->

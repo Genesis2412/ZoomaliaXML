@@ -7,7 +7,7 @@
             <Name>Dog Collar</Name>
             <Description>Red collar with paw prints</Description>
             <Price>200.00</Price>
-            <img>images/y1.jpg</img>
+            <img>img/y1.jpg</img>
       </dogProducts>
 
       <dogProducts category="Dog Harness">
@@ -15,7 +15,7 @@
             <Name>Dog Harness</Name>
             <Description>Adjustable harness with leash lead set</Description>
             <Price>600.00</Price>
-            <img>images/y3.jpg</img>
+            <img>img/y3.jpg</img>
       </dogProducts>
       
       <dogProducts category="Dog Brush">
@@ -23,7 +23,7 @@
             <Name>Dog Brush</Name>
             <Description> Puppy grooming brush</Description>
             <Price>150.00</Price>
-            <img>images/y5.jpg</img>
+            <img>img/y5.jpg</img>
       </dogProducts>
       
       <dogProducts category="Dog Leash">
@@ -31,7 +31,7 @@
             <Name>Dog Leash </Name>
             <Description>Simple red dog leash</Description>
             <Price>200.00</Price>
-           <img>images/y7.jpg</img>
+           <img>img/y7.jpg</img>
       </dogProducts>
       
       <dogProducts  category="Dog Toys">
@@ -39,7 +39,7 @@
           <Name>Dog Toys</Name>
           <Description> Includes 4 types of dog toys</Description>
           <Price>250</Price>
-         <img>images/y9.jpg</img>
+         <img>img/y9.jpg</img>
       </dogProducts>
       
       <dogProducts category="Dog Kennel">
@@ -47,7 +47,7 @@
           <Name>Dog Kennel</Name>
           <Description> Black modular kennel </Description>
           <Price>1500</Price>
-         <img>images/y11.jpg</img>
+         <img>img/y11.jpg</img>
       </dogProducts>
       
       <!--Cat Products-->
@@ -56,7 +56,7 @@
           <Name>Cat Collar</Name>
           <Description>Luxury green cat collar</Description>
           <Price>300</Price>
-          <img>images/z1.jpg</img>
+          <img>img/z1.jpg</img>
       </catProducts>
     
        <catProducts category="Cat Harness">
@@ -64,7 +64,7 @@
           <Name>Cat Harness</Name>
           <Description>Lightweight, soft and breatheable</Description>
           <Price>500.50</Price>
-          <img>images/z3.jpg</img>
+          <img>img/z3.jpg</img>
       </catProducts>
       
       <catProducts category="Cat Toys">
@@ -72,7 +72,7 @@
           <Name>Cat Toys</Name>
           <Description> Small toy fish and feather</Description>
           <Price>100</Price>
-          <img>images/z5.jpg</img>
+          <img>img/z5.jpg</img>
      </catProducts>
       
        <catProducts category="Cat Bed">
@@ -80,7 +80,7 @@
           <Name>Cat Bed</Name>
           <Description>Indoor cat bed</Description>
           <Price>450</Price>
-          <img>images/z7.jpg</img>
+          <img>img/z7.jpg</img>
       </catProducts>
       
     </products>
