@@ -1,0 +1,340 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*Navigation bar*/
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: rgba(75, 72, 72, 0.945);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    justify-content: flex-end;
+    position: fixed;
+
+}
+
+header .logo
+{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header .logo img
+{
+    height: 45px;
+}
+
+header nav
+{
+    float: right;
+}
+
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul
+{
+    list-style: none;
+}
+
+header nav ul li a
+{
+    height: 55px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active
+
+{
+    color: white;
+    background: rgb(0, 170, 170);
+}
+
+.menu-toggle
+{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+header ul li ul
+{
+    position: absolute;
+    background-color:rgba(97, 97, 97, 0.863);
+    display: block;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*End Of Navigation bar*/
+
+/*Banner Image*/
+.banner
+{
+  width: 100%;
+}
+
+.banner img
+{
+  width: 100%;
+  height: auto;
+}
+
+/*Heading*/
+h2
+{
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #7700C6;
+}
+
+/*Table Products details*/
+.tableDisplay
+{
+  width: 100%;
+  margin-top: 40px;
+  padding-right: 20px;
+  font-size: 17px;
+}
+
+/*Add Products link*/
+#addMore
+{
+  padding-left: 30px;
+}
+
+#addMore a:link,
+#addMore a:visited
+{
+  background-color: rgb(0, 170, 170);
+  color: #fff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Form Buy Products*/
+.container
+{
+  margin-top: 40px;
+  width: 100%;
+}
+
+#form input[type=text],
+#form input[type=text],
+#form input[type=number]
+{
+  width: 15%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#form input[type=Email],
+#form input[type=tel],
+#form input[type=number]
+{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#form select
+{
+  width: 150px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  align-content:center;
+}
+
+#form input[type=submit] {
+  border: none;
+  height: 50px;
+  width: 200px;
+  outline: none;
+  color: #ffffff;
+  background-color: #008CBA;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+/*Display Message*/
+.form-message
+{
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*footer*/
+#footer{
+  background: #333;
+  color: #fff;
+  padding:12px;
+}
+
+#footer p
+{
+  text-align: center;
+}
+
+/*Responsiveness*/
+@media(max-width: 991px)
+{
+    header
+    {
+        padding:0 20px;
+    }
+
+    .menu-toggle
+    {
+        display: block;
+    }
+
+    header nav
+    {
+        /*display: none*/
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background:#333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active
+    {
+        left: 0;
+    }
+    header nav ul
+    {
+        display: block;
+        text-align: center;
+    }
+
+    header .logo img
+    {
+        height: 35px;
+    }
+
+    header nav ul li a
+    {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li ul
+    {
+        width: 100%;
+    }
+
+    h2
+    {
+      font-size: 20px;
+    }
+
+    .banner img
+    {
+      position: relative;
+      bottom: 0px;
+    }
+
+    .tableDisplay th
+    {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    #addMore a:link,
+    #addMore a:visited
+    {
+      padding: 14px 15px;
+      font-size: 12px;
+    }
+
+    .footer img
+    {
+        width: 27%;
+        height:auto;
+        align-content: center;
+    }
+
+    #form h4
+    {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    #form input[type=email],
+    #form input[type=number],
+    #form input[type=text],
+    #form input[type=tel]
+    {
+      width: 60%;
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+
+    #form select
+    {
+      width: 150px;
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+
+    #form input[type=submit] 
+    {
+      height: 50px;
+      width: 200px;
+      font-size: 15px;
+    }
+
+    #logoFooter
+    {
+        width: 10%;
+        height:auto;
+        align-content: center;
+    }
+
+    .footer p
+    {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

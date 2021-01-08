@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clients.xsd">
+  <client id="1">
+    <Name>Jollo Molo</Name>
+    <Email>Molo@polo.com</Email>
+    <Phone>59875412</Phone>
+    <address>
+      <City>SimE grener</City>
+      <Zip>78945</Zip>
+      <Address>Lalmatie</Address>
+    </address>
+    <bankcard>
+      <Accountnum>74518465489</Accountnum>
+      <Expirydate>August 2026</Expirydate>
+    </bankcard>
+    <product>
+      <Productname>Dog Kennel</Productname>
+      <Quantity>1</Quantity>
+      <Price>1500</Price>
+    </product>
+  </client>
+</Clients>
