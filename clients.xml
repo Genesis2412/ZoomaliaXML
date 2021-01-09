@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="clients.xslt"?>
 <Clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="clients.xsd">
   <client id="1">
-    <Name>Jollo Molo</Name>
-    <Email>Molo@polo.com</Email>
-    <Phone>59875412</Phone>
+    <Name>Hiresh Pandoo</Name>
+    <Email>Hiresh3p@gmail.com</Email>
+    <Phone>59027511</Phone>
     <address>
-      <City>SimE grener</City>
-      <Zip>78945</Zip>
-      <Address>Lalmatie</Address>
+      <City>Moka</City>
+      <Zip>789481</Zip>
+      <Address>Upper Dagotiere</Address>
     </address>
     <bankcard>
-      <Accountnum>74518465489</Accountnum>
-      <Expirydate>August 2026</Expirydate>
+      <Accountnum>301245878556</Accountnum>
+      <Expirydate>July 2021</Expirydate>
     </bankcard>
     <product>
-      <Productname>Dog Kennel</Productname>
+      <Productname>Dog Collar</Productname>
       <Quantity>1</Quantity>
-      <Price>1500</Price>
+      <Price>200.00</Price>
+      <Image>img/y1.jpg</Image>
+      <Date>2021/01/08</Date>
     </product>
   </client>
-</Clients>
+<client id="2"><Name>John Bahaoul</Name><Email>John24@outlook.com</Email><Phone>59874562</Phone><address><City>Mont Roches</City><Zip>7845961</Zip><Address>Lane Maury Reine</Address></address><bankcard><Accountnum>32144569875</Accountnum><Expirydate>August 2022</Expirydate></bankcard><product><Productname>Cat Bed</Productname><Quantity>1</Quantity><Price>450</Price><Image>img/z7.jpg</Image><Date>2021/01/08</Date></product></client></Clients>

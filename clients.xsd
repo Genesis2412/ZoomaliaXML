@@ -37,6 +37,7 @@
                                             <xs:element name="Productname" type="xs:string"/>
                                             <xs:element name="Quantity" type="xs:positiveInteger"/>
                                             <xs:element name="Price" type="xs:decimal"/>
+                                            <xs:element name="Image" type="xs:string"/>
                                         </xs:sequence>
                                     </xs:complexType>
                                 </xs:element>

@@ -15,6 +15,7 @@
 		$month= mysqli_escape_string($connection, $_POST['month']);
 		$year= mysqli_escape_string($connection, $_POST['year']);
 		$expirydate= ($month .' '. $year);
+		$date= date("Y/m/d");
 
 		//check if fields are empty
 		if(empty($names) || empty($email) || empty($phone) || empty($city) || empty($zip) || empty($address) || empty($accno) || empty($month) || empty($year))
@@ -46,6 +47,7 @@
             	$name=mysqli_escape_string($connection, $values["item_name"]);
             	$quantity=mysqli_escape_string($connection, $values["item_quantity"]); 
 				$price=mysqli_escape_string($connection, $values["item_price"]);
+				$image=mysqli_escape_string($connection, $values["item_image"]);
 
 				if(!file_exists('clients.xml'))
 				{
@@ -118,6 +120,12 @@
 						
 								$child_node_price = $dom->createElement('Price', $price);
 								$product_node->appendChild($child_node_price);
+
+								$child_node_image = $dom->createElement('Image', $image);
+								$product_node->appendChild($child_node_image);
+
+								$child_node_date = $dom->createElement('Date', $date);
+								$product_node->appendChild($child_node_date);
 							
 							$client_node->appendChild($product_node);
 
@@ -200,6 +208,12 @@
 					
 							$child_node_price = $dom->createElement('Price', $price);
 							$product_node->appendChild($child_node_price);
+
+							$child_node_image = $dom->createElement('Image', $image);
+							$product_node->appendChild($child_node_image);
+
+							$child_node_date = $dom->createElement('Date', $date);
+							$product_node->appendChild($child_node_date);
 
 						$client_node->appendChild($product_node);
 
