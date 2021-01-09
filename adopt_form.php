@@ -29,6 +29,12 @@
 			    <li><a href="dogCat_adopt.php">ADOPTION</a></li>
 			    <li><a href="donate.php">DONATION</a></li>
 			    <li><a href="veterinary.php">VETERINARY</a></li>
+				<li><a style="color: white;">SHOP NOW</a>
+					<ul>
+						<li><a href="dogproduct.php">DOG</a></li>
+						<li><a href="catproduct.php">CAT</a></li>
+					</ul>
+				</li>
 			    <li><a href="index.php#contactUs">CONTACT US</a></li>
 			    <li>
 			        <a style="color: white;"><i class="fa fa-user" aria-hidden="true" style="font-size: 25px;"></i></a>

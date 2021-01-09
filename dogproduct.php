@@ -29,7 +29,7 @@
                 <li><a href="dogCat_adopt.php">ADOPTION</a></li>
                 <li><a href="donate.php">DONATION</a></li>
                 <li><a href="veterinary.php">VETERINARY</a></li>
-                <li><a href="">SHOP NOW</a>
+                <li><a style="color: white;">SHOP NOW</a>
                     <ul>
                         <li><a href="dogproduct.php">DOG</a></li>
                         <li><a href="catproduct.php">CAT</a></li>

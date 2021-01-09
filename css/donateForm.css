@@ -21,6 +21,7 @@ header
     z-index: 3;
     justify-content: flex-end;
     position: fixed;
+    font-size: 15px;
 
 }
 
