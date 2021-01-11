@@ -1,0 +1,33 @@
+.btncat button{
+    float: right;
+   background-color:#bfacb7;
+     border: none;
+     width: 90px;
+     height: 50px;
+     border-radius: 15px;
+}
+.table{
+      width: 100%;
+     border-collapse: collapse;
+ }
+.table td,.table th{
+     padding: 12px 15px;
+     border:1px solid #ddd;
+     text-align: center;
+}
+.table tbody tr:nth-child(even) {
+     background-color: #f6f6f6;
+}
+.table td img {
+     margin:30px;
+     width: 180px;
+     height: 150px;
+}
+
+.table td button{
+     background-color:#bfacb7;
+     border: none;
+     width: 75px;
+     height: 30px;
+     border-radius: 15px;
+}

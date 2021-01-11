@@ -1,0 +1,34 @@
+.btn button{
+   background-color:#bfacb7;
+     border: none;
+     width: 70px;
+     height: 50px;
+     border-radius: 15px;
+}
+.form input[type=number] {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input[type=text] {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form input[type=submit] {
+  border: none;
+  height: 35px;
+  width: 125px;
+  outline: none;
+  color: #ffffff;
+  background-color: #515769;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 15px;
+
+}

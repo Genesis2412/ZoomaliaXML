@@ -104,7 +104,7 @@
 			{
 				$.ajax({
 					type:"POST",
-					url:"adminProduct.php",
+					url:"crud.php",
 					success: function(value){
 						$(".content").html(value);
 					}
